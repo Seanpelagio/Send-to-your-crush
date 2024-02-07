@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>you miss me?</title>
+    </head>
+    <body>
+        <h1>DO YOU MISS ME?</h1>
+        <p>Confess kana please 😚</p>
+        <img src="shesh.gif" alt="gif">
+        <input type="button" value="yes" onclick="yes()">
+        <button id="myButton" onclick="no()">no</button>
+        <footer>©: Sean Eddrick Pelagio</footer>
+    </body>
+    <script>
+        function yes(){
+            alert(" yieeeeeeee!💕 \n i miss you too🤭");
+        }
+        
+        function no(){
+            var button = document.getElementById('myButton');
+          var newLeft = Math.floor(Math.random() * window.innerWidth);
+      var newTop = Math.floor(Math.random() * window.innerHeight);
+
+      button.style.left = newLeft + 'px';
+      button.style.top = newTop + 'px';  
+        }
+    </script>
+    <style>
+        body {
+            background: #ff001f33;
+            padding: 0;
+            margin: 0;
+        }
+        
+        h1{
+            text-align: center;
+            color: #e53984c9;
+        }
+        p{
+            text-align: center;
+            color: #78413cd5;
+        }
+    #myButton {
+      background: #ff152a;
+      color: #15f5ff;
+      position: absolute;
+      left: 53%;
+      top: 50%;
+      padding: 5px;
+    }
+    input{
+      background: #15fff5;
+       color: #ff001f;
+       position: absolute;
+      left: 40%;
+      top: 50%; 
+      padding: 5px;
+    }
+    img{
+      border-radius: 10px;
+      position: absolute;
+      left: 20%;
+      top: 16%; 
+    }
+     footer{
+         position: absolute;
+         bottom: 10px;
+         color: #707846;
+         
+     }
+    </style>
+        
+</html>
